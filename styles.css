@@ -4,7 +4,7 @@ body {
 }
 
 .site-header {
-  background-color: #1e90ff;
+  background-color: #111111;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -66,4 +66,5 @@ body {
 .page-section.active {
   display: block;
 }
+
 
