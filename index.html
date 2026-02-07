@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Students Against Poverty</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-left">
+      <img src="logo.png" alt="Students Against Poverty Logo" class="logo">
+      <h1 class="site-title">Students Against Poverty</h1>
+    </div>
+
+    <a href="#" class="donate-button">Donate</a>
+  </header>
+
+  <div class="page-container">
+
+    <nav class="sidebar">
+      <a href="#" onclick="showSection('mission')">Our Mission</a>
+      <a href="#" onclick="showSection('team')">Our Team</a>
+      <a href="#" onclick="showSection('whatwedo')">What We Do</a>
+    </nav>
+
+    <main class="content">
+
+      <section id="mission" class="page-section active">
+        <h2>Our Mission</h2>
+        <p>
+          Students Against Poverty is a student-led organization dedicated to
+          addressing poverty through awareness, fundraising, and community action.
+        </p>
+      </section>
+
+      <section id="team" class="page-section">
+        <h2>Our Team</h2>
+        <p>
+          Our team is made up of passionate students committed to making a difference
+          in their communities and beyond.
+        </p>
+      </section>
+
+      <section id="whatwedo" class="page-section">
+        <h2>What We Do</h2>
+        <p>
+          We organize fundraisers, educational events, and outreach initiatives
+          to support communities affected by poverty.
+        </p>
+      </section>
+
+    </main>
+
+  </div>
+
+  <script>
+    function showSection(sectionId) {
+      const sections = document.querySelectorAll('.page-section');
+
+      sections.forEach(section => {
+        section.classList.remove('active');
+      });
+
+      document.getElementById(sectionId).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
