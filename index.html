@@ -1,76 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Students Against Poverty</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <header class="site-header">
-  <div class="header-left">
-    <a href="./" class="logo-link">
-      <img src="logo.png" alt="Students Against Poverty Logo" class="logo">
-    </a>
-    <h1 class="site-title">Students Against Poverty</h1>
-  </div>
+  <!-- NAVIGATION -->
+  <header class="nav">
+    <div class="nav-container">
+      <div class="logo">
+        <div class="logo-mark">SAP</div>
+        <div>
+          <div class="logo-title">Students Against Poverty</div>
+          <div class="logo-sub">SAP</div>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Impact</a>
+        <a href="#">Get Involved</a>
+        <a href="#">Contact</a>
+        <a class="donate-btn" href="#">Donate</a>
+      </nav>
+    </div>
+  </header>
 
-  <a href="javascript:void(0)" class="donate-button">Donate</a>
-</header>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Together, We Can End Poverty</h1>
+      <p>
+        Students Against Poverty empowers young leaders to create meaningful
+        change in communities worldwide.
+      </p>
+      <div class="hero-buttons">
+        <a href="#" class="btn primary">Get Involved</a>
+        <a href="#" class="btn outline">Learn More</a>
+      </div>
+    </div>
+  </section>
 
-  <div class="page-container">
+  <!-- STATS -->
+  <section class="stats">
+    <div class="stat">
+      <div class="stat-number">10,000+</div>
+      <div class="stat-label">Students Involved</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number">150+</div>
+      <div class="stat-label">Communities Helped</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number">500+</div>
+      <div class="stat-label">Projects Completed</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number">50,000+</div>
+      <div class="stat-label">Lives Impacted</div>
+    </div>
+  </section>
 
-    <nav class="sidebar">
-      <a href="javascript:void(0)" onclick="showSection('mission')">Our Mission</a>
-      <a href="javascript:void(0)" onclick="showSection('team')">Our Team</a>
-      <a href="javascript:void(0)" onclick="showSection('whatwedo')">What We Do</a>
-    </nav>
+  <!-- MISSION -->
+  <section class="mission">
+    <h2>Our Mission</h2>
+    <p>
+      We mobilize students to combat poverty through education, community service,
+      and advocacy. Every student has the power to make a difference.
+    </p>
+  </section>
 
-    <main class="content">
+  <!-- CTA -->
+  <section class="cta">
+    <h2>Ready to Make a Difference?</h2>
+    <p>Join thousands of students creating positive change.</p>
+    <a href="#" class="btn primary">Volunteer</a>
+  </section>
 
-      <section id="mission" class="page-section active">
-        <h2>Our Mission</h2>
-        <p>
-          Students Against Poverty is a student led organization focused on raising
-          awareness and supporting communities affected by poverty.
-        </p>
-      </section>
-
-      <section id="team" class="page-section">
-        <h2>Our Team</h2>
-        <p>
-          Our team is made up of passionate students working together to create
-          meaningful change.
-        </p>
-      </section>
-
-      <section id="whatwedo" class="page-section">
-        <h2>What We Do</h2>
-        <p>
-          We organize fundraisers, events, and outreach efforts to help combat
-          poverty and inspire action.
-        </p>
-      </section>
-
-    </main>
-
-  </div>
-
-  <script>
-    function showSection(sectionId) {
-      const sections = document.querySelectorAll('.page-section');
-
-      sections.forEach(section => {
-        section.classList.remove('active');
-      });
-
-      document.getElementById(sectionId).classList.add('active');
-    }
-  </script>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 Students Against Poverty. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
-
-
