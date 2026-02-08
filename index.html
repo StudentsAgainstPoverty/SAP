@@ -2,88 +2,127 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Students Against Poverty</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- NAVIGATION -->
-  <header class="site-header">
-    <div class="header-left">
-      <img src="logo.png" alt="Students Against Poverty Logo" class ="logo">
-          <div class="logo-title">Students Against Poverty</div>
-          <div class="logo-sub">SAP</div>
-        </div>
-      </div>
-      <nav class="nav-links">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Impact</a>
-        <a href="#">Get Involved</a>
-        <a href="#">Contact</a>
-        <a class="donate-btn" href="#">Donate</a>
-      </nav>
-    </div>
-  </header>
+<header class="nav">
+  <h2>SAP</h2>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#get-involved">Get Involved</a>
+    <a href="#impact">Impact</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Together, We Can End Poverty</h1>
-      <p>
-        Students Against Poverty empowers young leaders to create meaningful
-        change in communities worldwide.
-      </p>
-      <div class="hero-buttons">
-        <a href="#" class="btn primary">Get Involved</a>
-        <a href="#" class="btn outline">Learn More</a>
-      </div>
-    </div>
-  </section>
+<!-- HOME -->
+<section id="home" class="hero">
+  <h1>Together, We Can End Poverty</h1>
+  <p>Students Against Poverty empowers young leaders to create meaningful change worldwide.</p>
+  <div class="buttons">
+    <a href="#get-involved" class="btn primary">Get Involved</a>
+    <a href="#about" class="btn outline">Learn More</a>
+  </div>
+</section>
 
-  <!-- STATS -->
-  <section class="stats">
-    <div class="stat">
-      <div class="stat-number">10,000+</div>
-      <div class="stat-label">Students Involved</div>
-    </div>
-    <div class="stat">
-      <div class="stat-number">150+</div>
-      <div class="stat-label">Communities Helped</div>
-    </div>
-    <div class="stat">
-      <div class="stat-number">500+</div>
-      <div class="stat-label">Projects Completed</div>
-    </div>
-    <div class="stat">
-      <div class="stat-number">50,000+</div>
-      <div class="stat-label">Lives Impacted</div>
-    </div>
-  </section>
+<section class="stats">
+  <div><strong>10,000+</strong><span>Students Involved</span></div>
+  <div><strong>150+</strong><span>Communities Helped</span></div>
+  <div><strong>500+</strong><span>Projects Completed</span></div>
+  <div><strong>50,000+</strong><span>Lives Impacted</span></div>
+</section>
 
-  <!-- MISSION -->
-  <section class="mission">
-    <h2>Our Mission</h2>
-    <p>
-      We mobilize students to combat poverty through education, community service,
-      and advocacy. Every student has the power to make a difference.
-    </p>
-  </section>
+<!-- ABOUT -->
+<section id="about">
+  <h2>About SAP</h2>
+  <p class="center">
+    Founded in 2015, Students Against Poverty is a student-led organization committed to ending poverty.
+  </p>
 
-  <!-- CTA -->
-  <section class="cta">
-    <h2>Ready to Make a Difference?</h2>
-    <p>Join thousands of students creating positive change.</p>
-    <a href="#" class="btn primary">Volunteer</a>
-  </section>
+  <h3>Our Values</h3>
+  <div class="grid">
+    <div class="card">Action-Oriented</div>
+    <div class="card">Empowerment</div>
+    <div class="card">Impact-Driven</div>
+    <div class="card">Community-Focused</div>
+  </div>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <p>© 2026 Students Against Poverty. All rights reserved.</p>
-  </footer>
+  <h3>Leadership Team</h3>
+  <div class="grid">
+    <div class="card"><strong>Sarah Johnson</strong><br/>Founder & President</div>
+    <div class="card"><strong>Michael Chen</strong><br/>Vice President</div>
+    <div class="card"><strong>Aisha Patel</strong><br/>Director of Programs</div>
+    <div class="card"><strong>James Wilson</strong><br/>Director of Fundraising</div>
+  </div>
+</section>
+
+<!-- GET INVOLVED -->
+<section id="get-involved" class="alt">
+  <h2>Get Involved</h2>
+  <div class="grid">
+    <div class="card">Volunteer</div>
+    <div class="card">Donate</div>
+    <div class="card">Host an Event</div>
+    <div class="card">Spread the Word</div>
+    <div class="card">Corporate Sponsorship</div>
+    <div class="card">Start a Chapter</div>
+  </div>
+
+  <h3>Volunteer Opportunities</h3>
+  <ul class="list">
+    <li>Tutoring Volunteer</li>
+    <li>Food Drive Coordinator</li>
+    <li>Social Media Ambassador</li>
+    <li>Event Planning Team</li>
+  </ul>
+</section>
+
+<!-- IMPACT -->
+<section id="impact">
+  <h2>Our Impact</h2>
+  <div class="grid">
+    <div class="card">5,000+ Students Tutored</div>
+    <div class="card">$250,000 Scholarships</div>
+    <div class="card">100,000+ Meals Provided</div>
+    <div class="card">1,200 Housing Assisted</div>
+    <div class="card">800 Job Trainees</div>
+    <div class="card">3,000 Healthcare Referrals</div>
+  </div>
+
+  <h3>Success Stories</h3>
+  <blockquote>
+    “SAP allowed me to become a first-generation college graduate.” — Maria
+  </blockquote>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="alt">
+  <h2>Contact Us</h2>
+
+  <div class="contact-grid">
+    <div>
+      <p>Email: info@sap.org</p>
+      <p>Phone: (555) 123-4567</p>
+      <p>Address: 123 Campus Drive</p>
+    </div>
+
+    <form>
+      <input placeholder="First Name" required />
+      <input placeholder="Last Name" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="Message"></textarea>
+      <button class="btn primary">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Students Against Poverty</p>
+</footer>
 
 </body>
 </html>
-
-
